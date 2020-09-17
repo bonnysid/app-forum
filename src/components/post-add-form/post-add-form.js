@@ -1,6 +1,10 @@
 import React from 'react';
 import './post-add-form.css';
 
+function addItem(data) {
+    
+}
+
 const PostAddForm = () => {
     return (
         <form className="bottom-panel d-flex">
@@ -12,8 +16,9 @@ const PostAddForm = () => {
             <button
                 type="submit"
                 className="btn btn-outline-secondary"
+                onClick={addItem()}
             >
-                Добавить
+                Add
             </button>
         </form>
     )
